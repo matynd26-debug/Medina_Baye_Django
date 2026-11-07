@@ -1,0 +1,94 @@
+{% extends 'village/base.html' %}
+{% block title %}Accueil | Médina Baye{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="eyebrow">BIENVENUE À KAOLACK, SÉNÉGAL</span>
+
+        <h1>Une histoire.<br>Une culture.<br><span>Une identité.</span></h1>
+
+        <p>
+            Partez à la découverte de Médina Baye,
+            une cité emblématique au patrimoine
+            spirituel et culturel remarquable.
+        </p>
+
+        <a href="{% url 'histoire' %}" class="btn">
+            Découvrir notre histoire →
+        </a>
+    </div>
+
+   {% load static %}
+
+<div class="hero-photo">
+    <img src="{% static 'village/images/médina.jpeg' %}"
+         alt="Découverte de Médina Baye">
+</div>
+</section>
+
+<section class="welcome section">
+    <span class="eyebrow">NOTRE CITÉ</span>
+    <h2>Bienvenue à Médina Baye</h2>
+
+    <p class="intro-text">
+        Au cœur de Kaolack, Médina Baye est une cité
+        connue pour son histoire, son enseignement
+        religieux, ses traditions et son rayonnement
+        à travers le monde.
+    </p>
+</section>
+
+<section class="section discovery">
+    <div class="section-heading">
+        <span class="eyebrow">EXPLOREZ</span>
+        <h2>Découvrez notre univers</h2>
+        <p>Six regards pour découvrir l'identité de notre cité.</p>
+    </div>
+
+    <div class="cards">
+
+        <article class="card">
+            <div class="card-photo">
+    <img src="{% static 'village/images/baye.jpeg' %}"
+         alt="Fondateur Baye">
+</div>
+            <div class="card-content">
+                <h3>Notre histoire</h3>
+                <p>Les origines et les grandes étapes de Médina Baye.</p>
+                <a href="{% url 'histoire' %}">En savoir plus →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-photo">
+                <img src="{% static 'village/images/photo2.jpeg' %}" alt="">
+            </div>
+            <div class="card-content">
+                <h3>Notre patrimoine</h3>
+                <p>Les lieux emblématiques de notre cité.</p>
+                <a href="{% url 'patrimoine' %}">Explorer →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-photo">
+                <img src="{% static 'village/images/zikr.jpeg' %}" alt="" width="200px">
+            </div>
+            <div class="card-content">
+                <h3>Notre culture</h3>
+                <p>Les traditions, les valeurs et la vie communautaire.</p>
+                <a href="{% url 'culture' %}">Découvrir →</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="quote">
+    <span>NOTRE IDENTITÉ, NOTRE FIERTÉ</span>
+    <h2>« Un lieu, une histoire, une communauté. »</h2>
+</section>
+
+{% endblock %}

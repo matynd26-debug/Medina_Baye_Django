@@ -1,0 +1,151 @@
+
+{% extends 'village/base.html' %}
+{% block title %}Histoire | Médina Baye{% endblock %}
+{% load static %}
+
+{% block content %}
+
+<!-- BANNIERE -->
+<section class="page-banner">
+    <span class="eyebrow">NOS ORIGINES ET NOTRE HÉRITAGE</span>
+    <h1>L'histoire de Médina Baye</h1>
+    <p>
+        Retour sur la naissance et le rayonnement
+        d'une cité emblématique du Sénégal.
+    </p>
+</section>
+
+<!-- PRESENTATION HISTORIQUE -->
+<section class="section history-layout">
+
+    <div class="large-photo">
+        <img src="{% static 'village/images/baye.jpeg' %}" alt="">
+    </div>
+
+    <div class="history-content">
+        <span class="eyebrow">LES ORIGINES</span>
+
+        <h2>La naissance d'une cité spirituelle</h2>
+
+        <p>
+            Médina Baye est une cité religieuse située
+            dans la ville de Kaolack, au centre du Sénégal.
+            Son histoire est étroitement liée à celle
+            de Cheikh Al Islam El Hadji Ibrahima Niass,
+            plus connu sous le nom de Baye Niass.
+        </p>
+
+        <p>
+            En 1930, Cheikh Ibrahima Niass fonde Médina Baye.
+            Son ambition était de créer un important foyer
+            de spiritualité, d'enseignement islamique
+            et de transmission du savoir.
+        </p>
+
+        <p>
+            La cité s'est progressivement développée
+            autour de cet idéal religieux et éducatif.
+        </p>
+    </div>
+
+</section>
+
+<!-- BAYE NIASS -->
+<section class="section light-section">
+    <div class="history-layout">
+
+        <div class="history-content">
+            <span class="eyebrow">UNE FIGURE HISTORIQUE</span>
+
+            <h2>Cheikh Al Islam Ibrahima Niass</h2>
+
+            <p>
+                Né en 1900 à Taïba Niassène, Cheikh Ibrahima
+                Niass est une grande figure religieuse
+                de l'histoire du Sénégal et de la tradition
+                tidiane.
+            </p>
+
+            <p>
+                À travers son enseignement et son engagement
+                spirituel, il a contribué à la diffusion
+                de la Fayda Tijaniyya au Sénégal et dans
+                de nombreux pays.
+            </p>
+
+            <p>
+                Son rayonnement a permis à Médina Baye
+                de devenir un centre religieux de dimension
+                internationale, accueillant des disciples
+                de différentes nationalités.
+            </p>
+
+            <p>
+                Il s'est éteint en 1975, laissant derrière
+                lui un héritage religieux et intellectuel
+                important.
+            </p>
+        </div>
+
+        <div class="large-photo">
+            <img src="{% static 'village/images/baye niass.jpeg' %}" alt="">
+        </div>
+
+    </div>
+</section>
+
+<!-- DEVELOPPEMENT -->
+<section class="section">
+    <div class="section-heading">
+        <span class="eyebrow">AU FIL DES ANNÉES</span>
+        <h2>Le développement de Médina Baye</h2>
+    </div>
+
+    <div class="culture-grid">
+
+        <article>
+            <h3>1930 : Fondation</h3>
+            <p>
+                La fondation de Médina Baye marque le début
+                d'une nouvelle étape dans l'histoire
+                religieuse de Kaolack.
+            </p>
+        </article>
+
+        <article>
+            <h3>Un centre de savoir</h3>
+            <p>
+                La cité se développe autour de l'enseignement
+                religieux, de la formation et de la transmission
+                du savoir islamique.
+            </p>
+        </article>
+
+        <article>
+            <h3>Un rayonnement international</h3>
+            <p>
+                Grâce à l'influence de Baye Niass et de
+                ses disciples, Médina Baye établit des liens
+                spirituels avec de nombreuses communautés
+                à travers le monde.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<!-- HERITAGE -->
+<section class="quote">
+    <span>UN HÉRITAGE POUR LES GÉNÉRATIONS FUTURES</span>
+
+    <h2>
+        Une histoire qui continue de s'écrire
+    </h2>
+
+    <p>
+        Médina Baye demeure un symbole de spiritualité,
+        de savoir, de fraternité et de rayonnement culturel.
+    </p>
+</section>
+
+{% endblock %}

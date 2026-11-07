@@ -1,0 +1,57 @@
+{% extends 'village/base.html' %}
+{% block title %}Galerie | Médina Baye{% endblock %}
+
+{% block content %}
+
+<section class="page-banner">
+    <span class="eyebrow">EN IMAGES</span>
+    <h1>Notre galerie</h1>
+    <p>Découvrez Médina Baye autrement.</p>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <h2>La beauté de notre cité</h2>
+        <p>Des images qui racontent notre histoire.</p>
+    </div>
+
+    {% load static %}
+
+<div class="gallery">
+
+    <div class="gallery-photo">
+        <img src="{% static 'village/images/medinasud.jpeg' %}" alt="Médina Baye">
+    </div>
+
+    <div class="gallery-photo">
+        <img src="{% static 'village/images/khabrou.jpeg' %}" alt="Mosquée">
+    </div>
+
+    <div class="gallery-photo">
+        <img src="{% static 'village/images/mosquebaye.jpeg' %}" alt="Histoire">
+    </div>
+
+    <div class="gallery-photo">
+        <img src="{% static 'village/images/medina nord.jpeg' %}" alt="">
+    </div>
+    <div class="gallery-photo">
+        <img src="{% static 'village/images/crépuscule.jpeg' %}" alt="">
+    </div>
+     <div class="gallery-photo">
+        <img src="{% static 'village/images/keur baye.jpeg' %}" alt="">
+    </div>
+     <div class="gallery-photo">
+        <img src="{% static 'village/images/rue med.jpeg' %}" alt="">
+    </div>
+     <div class="gallery-photo">
+        <img src="{% static 'village/images/rue cote keur bate.jpeg' %}" alt="">
+    </div>
+<div class="gallery-photo">
+        <img src="{% static 'village/images/priere.jpeg' %}" alt="">
+    </div>
+</div>
+
+    
+</section>
+
+{% endblock %}

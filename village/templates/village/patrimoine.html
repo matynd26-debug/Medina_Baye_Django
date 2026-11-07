@@ -1,0 +1,63 @@
+{% extends 'village/base.html' %}
+{% block title %}Patrimoine | Médina Baye{% endblock %}
+{% load static %}
+{% block content %}
+
+
+<section class="page-banner">
+    <span class="eyebrow">NOS RICHESSES</span>
+    <h1>Notre patrimoine</h1>
+    <p>À la découverte des lieux emblématiques de Médina Baye.</p>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <h2>Les trésors de notre cité</h2>
+        <p>Des lieux qui racontent notre histoire.</p>
+    </div>
+
+    <div class="cards">
+
+        <article class="card">
+            <div class="card-photo">
+                <img src="{% static 'village/images/soroor.jpeg' %}" alt="">
+            </div>
+            <div class="card-content">
+                <h3>La Grande Mosquée</h3>
+                <p>
+                    Un lieu emblématique de prière,
+                    de rassemblement et de spiritualité.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-photo">
+                <img src="{% static 'village/images/keur baye.jpeg' %}"" alt="">
+            </div>
+            <div class="card-content">
+                <h3>Les lieux historiques</h3>
+                <p>
+                    Découvrez les lieux associés
+                    à l'histoire de la cité.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-photo">
+                <img src="{% static 'village/images/priere.jpeg' %}" alt="">
+            </div>
+            <div class="card-content">
+                <h3>La vie de la cité</h3>
+                <p>
+                    Des rues animées qui témoignent
+                    de la vie quotidienne.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+{% endblock %}

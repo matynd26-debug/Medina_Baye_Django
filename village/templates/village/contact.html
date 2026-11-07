@@ -1,0 +1,78 @@
+{% extends 'village/base.html' %}
+{% block title %}Contact | Médina Baye{% endblock %}
+
+{% block content %}
+
+<section class="page-banner">
+    <span class="eyebrow">RESTONS EN CONTACT</span>
+    <h1>Contactez-nous</h1>
+    <p>Nous serons ravis de recevoir vos messages.</p>
+</section>
+
+<section class="section contact-layout">
+
+    <div class="contact-info">
+        <h2>Parlons de Médina Baye</h2>
+
+        <p>
+            Une question, une suggestion ou une photo
+            à partager ? N'hésitez pas à nous écrire.
+        </p>
+
+        <div class="contact-detail">
+            <h3>📍 Notre localisation</h3>
+            <p>Médina Baye, Kaolack, Sénégal</p>
+        </div>
+
+        <div class="contact-detail">
+            <h3>✉️ Notre adresse email</h3>
+            <p>médinabaye@gmail.com</p>
+        </div>
+    </div>
+
+    <form class="contact-form" method="POST">
+        {% csrf_token %}
+
+        <h2>Envoyez-nous un message</h2>
+
+        <label for="nom">Nom complet</label>
+        <input type="text" name="nom" id="nom"
+               placeholder="Votre nom" required>
+
+        <label for="email">Adresse email</label>
+        <input type="email" name="email" id="email"
+               placeholder="Votre email" required>
+
+        <label for="sujet">Sujet</label>
+        <input type="text" name="sujet" id="sujet"
+               placeholder="Sujet du message" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message"
+                  rows="6" placeholder="Votre message..."
+                  required></textarea>
+
+        <button type="submit" class="btn">
+            Envoyer mon message →
+        </button>
+    </form>
+
+</section>
+
+<section class="section map-section">
+    <h2>Retrouvez-nous à Médina Baye</h2>
+
+    <p>Kaolack, Sénégal</p>
+
+    <iframe
+    src="https://www.google.com/maps?q=M%C3%A9dina+Baye,+Kaolack,+S%C3%A9n%C3%A9gal&output=embed"
+    width="100%"
+    height="450"
+    style="border:0; border-radius: 12px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</section>
+
+{% endblock %}
